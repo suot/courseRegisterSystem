@@ -1,0 +1,58 @@
+﻿@model CourseRegister.Models.Course
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Course</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.classroom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.classroom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Faculty.firstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Faculty.firstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Term.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Term.name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

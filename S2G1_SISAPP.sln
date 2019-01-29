@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourseRegister", "CourseRegister\CourseRegister.csproj", "{F27F69CA-F2E2-49EA-9301-B2066A877D89}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S2G1_SISAPP", "CourseRegister\S2G1_SISAPP.csproj", "{F27F69CA-F2E2-49EA-9301-B2066A877D89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
