@@ -5,20 +5,21 @@ It is an ASP.NET web system built by MVC scaffolds and SQL Server. "S2G1_SISDB.b
 1. Prerequisite
 You have designed the schema in your local Sql server Database, including attributes and their domain, and constraints like primary key and foreign keys.
 
-<img src="readmeImage/1.png" width="80%" height="80%">
+<img src="readmeImage/1.png" width="40%" height="40%">
 
 2. Create a new project in Visual Studio Enterprise IDE: File->New->ASP.NET Web Application->MVC->Change Authentication(Individual User Accounts for further developing login page via google account).
 
-<img src="readmeImage/2.png" width="80%" height="80%">
+<img src="readmeImage/2.png" width="70%" height="70%">
 
 3. Create Model: Models->Add->New Item->Data->ADO.NET Entity Data Model->EF Designer from database(Server name can be found in Master Data Services)
 
-<img src="readmeImage/3.png" width="50%" height="50%"><img src="readmeImage/4.png" width="50%" height="50%"><img src="readmeImage/5.png" width="50%" height="50%">
+<img src="readmeImage/3.png" width="40%" height="40%"><img src="readmeImage/4.png" width="50%" height="50%">
+<img src="readmeImage/5.png" width="50%" height="50%">
 
 After this step, a class diagram and all entity classes are generated.
 
-<img src="readmeImage/6.png" width="80%" height="80%">
-<img src="readmeImage/7.png" width="80%" height="80%"><img src="readmeImage/8.png" width="80%" height="80%">
+<img src="readmeImage/6.png" width="90%" height="90%">
+<img src="readmeImage/7.png" width="30%" height="30%"><img src="readmeImage/8.png" width="60%" height="60%">
 
 Add also, a connection string is generated in Web.config file:
 
@@ -33,12 +34,12 @@ Add also, a connection string is generated in Web.config file:
 
 S2G1_SISDBEntities is the name of the connection string and CourseRegister.Models is the namespace(CourseRegister is the previous name of the project and solution). After this step, you can see the controller and its relevant views generated automatically by scaffold.
 
-<img src="readmeImage/11.png" width="80%" height="80%">
+<img src="readmeImage/11.png" width="30%" height="30%">
 
 Modify Shared/_Layout.cshtml and Home/Index.cshtml files.
 
-<img src="readmeImage/12.png" width="80%" height="80%">
-<img src="readmeImage/13.png" width="80%" height="80%">
+<img src="readmeImage/12.png" width="60%" height="60%">
+<img src="readmeImage/13.png" width="60%" height="60%">
 
 5. Run application:
 
@@ -59,27 +60,27 @@ Modify Shared/_Layout.cshtml and Home/Index.cshtml files.
 
 That is why in the create web page you can see the label departmentId while the value list shows you the name list rather than the department id list.
 
-<img src="readmeImage/18.png" width="80%" height="80%">
+<img src="readmeImage/18.png" width="30%" height="30%">
 <img src="readmeImage/19.png" width="80%" height="80%">
 
 While in fact the attribute the action inserts into database is not the value of department name, but right the department id. It is a little bit tricky but meaningful. If you really want to show value list of department id on web page, just modify the third parameter in the SelectList function above.
 
 <img src="readmeImage/20.png" width="80%" height="80%">
-<img src="readmeImage/21.png" width="80%" height="80%">
+<img src="readmeImage/21.png" width="50%" height="50%">
 
 6.4 If the database table does not contain an attribute called id or className+Id (for e.g. StudentId), scaffold may fail to generate entity class. To walk around, a [key] annotation should be added in front of the primary non-id attribute.
 
-<img src="readmeImage/22.png" width="80%" height="80%">
+<img src="readmeImage/22.png" width="30%" height="30%">
 
 7. Share it onto Github
 Download Github Extension for Visual Studio and install it. VS->View->Team Explorer->Connect. Publish to Github and then Push, Pull, etc
 
-<img src="readmeImage/23.png" width="80%" height="80%">
+<img src="readmeImage/23.png" width="100%" height="100%">
 
 8.	Launch the application to Azure
 Right click on Project name->Publish->Create a free Azure account->Web app+DB
 
-<img src="readmeImage/24.png" width="80%" height="80%">
+<img src="readmeImage/24.png" width="100%" height="100%">
 
 A web page with an Azure url will pop up. It is cool, but you cannot access any further functions until now, because of the connection issue between Azure app and Azure DB.
 
