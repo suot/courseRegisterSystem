@@ -122,7 +122,7 @@ After restoring a new DB, go to MDS to select and update the DB, otherwise you m
 10. Deployment
 
 ```
-git clone https://github.com/hongshuidang/courseRegisterSystem
+git clone https://github.com/suot/courseRegisterSystem
 ```
 
 Deploy it onto Microsoft Azure: https://s2g1sis.azurewebsites.net (outdated)
